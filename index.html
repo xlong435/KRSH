@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRSH官方社区</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微软雅黑", sans-serif;
+        }
+        body {
+            /* 9:16背景图居中不变形，空白区域可爱淡粉圆点背景 */
+            background: 
+                url("背景.webp") no-repeat center center fixed,
+                radial-gradient(circle at 10% 10%, rgba(255,180,220,0.15) 0 8%, transparent 9%),
+                radial-gradient(circle at 90% 18%, rgba(255,180,220,0.15) 0 10%, transparent 11%),
+                radial-gradient(circle at 15% 85%, rgba(255,220,240,0.2) 0 9%, transparent 10%),
+                radial-gradient(circle at 85% 90%, rgba(255,220,240,0.2) 0 11%, transparent 12%);
+            background-color: #fff5f8;
+            background-size: contain, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+            min-height: 100vh;
+            padding: 20px 15px;
+        }
+        /* 顶部趴睡小猫区域 */
+        .top-cat-box {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .sleep-cat {
+            width: 220px;
+            max-width: 60%;
+            filter: drop-shadow(0 4px 8px rgba(255,180,220,0.6));
+        }
+        .title-text {
+            font-size: 36px;
+            color: #ff6fb9;
+            text-shadow: 2px 2px 0 #fff;
+            text-align: center;
+            margin: 10px 0 30px;
+            font-weight: bold;
+        }
+        /* 成员卡片容器 */
+        .member-wrap {
+            max-width: 600px;
+            margin: 0 auto 50px;
+            background: rgba(255, 255, 255, 0.75);
+            border-radius: 24px;
+            padding: 30px 20px;
+            border: 3px solid #ffb6d2;
+        }
+        .member-title {
+            font-size: 24px;
+            color: #ff58a8;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .member-item {
+            font-size: 18px;
+            color: #444;
+            margin: 16px 0;
+            padding-left: 12px;
+            border-left: 4px solid #ff94c2;
+        }
+        /* 图片按钮通用样式（缩小猫爪尺寸） */
+        .btn-img {
+            display: block;
+            width: 160px; /* 从260px改为160px，缩小按键 */
+            max-width: 60%;
+            margin: 22px auto;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        .btn-img:hover {
+            transform: scale(1.06);
+        }
+        /* 底部区域 */
+        .footer-box {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px dashed #ffc6df;
+        }
+        .footer-tip {
+            font-size: 17px;
+            color: #ff4b9c;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部：趴着睡觉小猫 -->
+    <div class="top-cat-box">
+        <img src="sleepcat.webp" alt="趴着睡觉的小猫" class="sleep-cat">
+        <h1 class="title-text">KRSH官方社区</h1>
+    </div>
+
+    <!-- KRSH成员介绍 -->
+    <div class="member-wrap">
+        <h2 class="member-title">🐱 KRSH 全体成员</h2>
+        <div class="member-item">PHAGE-A ｜ 创始人</div>
+        <div class="member-item">Jvmtuovo</div>
+        <div class="member-item">codm空崎日奈</div>
+    </div>
+
+    <!-- 一键加群按钮（已填你的QQ群链接） -->
+    <a href="https://qm.qq.com/q/hhwa5gePYs" target="_blank">
+        <img src="按键.webp" alt="一键加群" class="btn-img">
+    </a>
+
+    <!-- 底部：龙之谷分部跳转 -->
+    <div class="footer-box">
+        <p class="footer-tip">前往KRSH龙之谷分部</p>
+        <a href="https://krsh.longvalley.cn" target="_blank">
+            <img src="按键.webp" alt="前往龙之谷分部" class="btn-img">
+        </a>
+    </div>
+</body>
+</html>
